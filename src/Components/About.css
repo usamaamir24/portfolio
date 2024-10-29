@@ -1,0 +1,159 @@
+/* About Section Layout */
+.about-section {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  /* Image Section */
+  .about-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Bio & Skills Section */
+  .about-content {
+    width: 50%;
+    margin-left: 20px;
+  }
+  
+  /* Bio Section */
+  .about-bio {
+    margin-bottom: 30px;
+  }
+  
+  .about-bio h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .about-bio p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  /* Skills Section */
+  .about-skills h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .skill {
+    margin-bottom: 15px;
+  }
+  
+  .skill span {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    position: relative;
+    /* width: 100%; */
+    height: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    background-color: #76c7c0;
+    height: 100%;
+    width: 0; /* Initial width set to 0 */
+    border-radius: 5px;
+    animation: fillProgress 2s ease-in-out forwards; /* Animation */
+  }
+  
+  .progress-percent {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+  }
+  
+  @keyframes fillProgress {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: width; /* Default to 100%, actual width will be set by inline style */
+    }
+  }
+  
+  
+  /* Action Buttons */
+  .action-buttons {
+    margin-top: 20px;
+  }
+  
+  .hire-btn,
+  .download-cv-btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .hire-btn {
+    background-color: #8bc34a;
+    color: white;
+  }
+  
+  .download-cv-btn {
+    background-color: #607d8b;
+    color: white;
+  }
+  
+  /* Optional Media Query for Smaller Screens */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about-image,
+    .about-content {
+      width: 100%;
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .about-bio h2,
+    .about-skills h2 {
+      font-size: 24px;
+    }
+  
+    .about-bio p,
+    .skill span {
+      font-size: 14px;
+    }
+  
+    .action-buttons {
+      flex-direction: column;
+    }
+  
+    .hire-btn,
+    .download-cv-btn {
+      margin: 10px 0;
+    }
+  }
+  

@@ -1,0 +1,138 @@
+/* General styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Topbar styling */
+.topbar .contact-info a {
+  color: white;
+  text-decoration: none;
+}
+.header{
+  background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dGVjaHxlbnwwfHwwfHx8MA%3D%3D') no-repeat center center;
+  background-size: cover; /* Make the background cover the entire container */
+  background-attachment: fixed; /* Keep the background fixed */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent background from repeating */
+  height: 100vh; /* Full height for the initial viewport */
+ 
+}
+
+.topbar .contact-info i {
+  margin-right: 10px;
+}
+
+/* Branding section */
+.branding {
+  /* background-color: #333;; */
+  padding: 20px 0;
+}
+
+.sitename {
+  color: black;
+  font-size: 32px;
+}
+
+/* Navbar menu */
+.navmenu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+    /* Add a dark background to ensure visibility of white text */
+}
+
+.navmenu ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+
+}
+
+
+.navmenu a {
+  color: black;  /* White text for contrast against the dark background */
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.navmenu .active {
+  font-weight: bold;
+}
+
+.dropdown ul {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  list-style: none;
+  margin-top: 0.5rem; /* Small gap between dropdown and parent menu */
+}
+
+.dropdown:hover ul {
+  display: block;
+}
+
+.dropdown ul a {
+  color: #333;  /* Dark text for dropdown items to make them visible on white background */
+  padding: 10px;
+}
+
+.dropdown ul a:hover {
+  background-color: #f2f2f2;  /* Add a hover effect for dropdown items */
+}
+
+/* Mobile toggle */
+.mobile-nav-toggle {
+  display: none;
+}
+
+/* Hero section */
+.hero{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+#hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: yellow;
+}
+
+#hero h2 {
+  font-size: 32px;
+  margin-top: 10px;
+  color: yellow;
+}
+
+#hero p {
+  font-size: 16px;
+  color: aqua;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  .navmenu ul {
+    flex-direction: column;
+    background-color: #333;
+  }
+  
+  .mobile-nav-toggle {
+    display: block;  /* Show mobile toggle on smaller screens */
+  }
+
+  #hero h1 {
+    font-size: 36px;
+  }
+
+  #hero h2 {
+    font-size: 28px;
+  }
+}
+
